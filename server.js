@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(productRouter);
 
-connectDB()
+mongoose.connect("mongodb+srv://ontio:theophilus@cluster0.byuppdd.mongodb.net/NODE-API?retryWrites=true&w=majority")
 .then(
     () => {
         console.log("Connected to MongoDB");
