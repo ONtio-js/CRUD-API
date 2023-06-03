@@ -13,7 +13,7 @@ app.post('/products', productController.createProduct);
 app.put('/products/:id', productController.updateProduct);
 app.delete('/products/:id', productController.deleteProduct);
 
-mongoose.connect("mongodb+srv://ontio:theophilus@cluster0.byuppdd.mongodb.net/NODE-API?retryWrites=true&w=majority")
+mongoose.connect("")
 .then(
     () => {
         console.log("Connected to MongoDB");
