@@ -1,4 +1,4 @@
-const product = require('../productModel/productModel');
+const product = require('../model/productModel');
 
 async function findAll(req, res){
     try{
