@@ -5,6 +5,7 @@ async function findAll(req, res){
         const products = await product.find({});
         if(products.length > 0){
             res.status(200).json(products);
+            return;
         }else{
             res.status(404).json({message:"Products not found"});
         }
